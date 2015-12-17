@@ -21,7 +21,8 @@ Android系统中提供了三种方式用于简单地实现数据持久化功能�
 存储一些简单的文本数据或二进制数据
 #### 实现
 - **存储** 利用`Context`类中提供的`openFileOutput`方法将数据存储到指定的文件中，文件名自定义，默认存储到`/data/data/<packge name>files/`目录下
-- **读取** 类似的，`Context`类还提供了`openFileInput`方法用于从文件中读取数据，根据接收的文件名系统自动到`/data/data/<packge name>files/`目录下加载该文件                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+- **读取** 类似的，`Context`类还提供了`openFileInput`方法用于从文件中读取数据，根据接收的文件名系统自动到`/data/data/<packge name>files/`目录下加载该文件
+
 #### 扩展
 如果需要利用文件存储的方式保存一些较为复杂的文本数据，就需要定义一套自己的格式规范，方便之后将数据从文件中重新解析出来
 
